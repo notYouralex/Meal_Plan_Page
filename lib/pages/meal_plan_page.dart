@@ -24,11 +24,30 @@ AppBar appBar() {
       ),
     leading: Container(
       margin: EdgeInsets.all(10),
-      color: Color(0xFFF7F8F8),
+      decoration: BoxDecoration(
+        color: Color(0xFFF7F8F8),
+        borderRadius: BorderRadius.circular(10)
+      ),
       child: Padding(
         padding: const EdgeInsets.all(4),
         child: SvgPicture.asset("assets/icons/Arrow_Left_2.svg",height: 8,width: 8,),
+      
       ),
     ),
+    actions:[
+      Container(
+        height: 32,
+        width: 32,
+        decoration: BoxDecoration(
+        color: Color(0xFFF7F8F8),
+        borderRadius: BorderRadius.circular(10)
+        ),
+        margin: EdgeInsets.only(left: 10,right: 16,top: 10,bottom: 10),
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: SvgPicture.asset("assets/icons/dots.svg",),
+        ),
+      )
+    ]
   );
 }
