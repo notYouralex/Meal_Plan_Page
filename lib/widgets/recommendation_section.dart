@@ -14,8 +14,7 @@ class RecommendationSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(top: 16, left: 10, right: 10), 
-      color: Colors.amber,   
+      margin: EdgeInsets.only(top: 16, left: 10, right: 10),   
       child: Column(
         mainAxisSize: MainAxisSize.min,
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -25,8 +24,8 @@ class RecommendationSection extends StatelessWidget {
             child: SectionTitle(title: "Reccomendation\nfor Diet",)          
         ),
         Container(
+          margin: EdgeInsets.only(top: 10),
           height: 240,
-          color: Colors.green,
           child: ListView.builder(
             scrollDirection: Axis.horizontal,
             itemCount: listRecommendation.length,

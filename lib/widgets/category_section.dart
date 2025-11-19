@@ -16,7 +16,6 @@ class CategorySection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
   return Container(
-    color: Colors.amberAccent,
     margin: const EdgeInsets.only(left: 10, top: 20, right: 10),
     child: Column(
       mainAxisSize: MainAxisSize.min, // Fit content instead of fixed height
