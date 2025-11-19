@@ -29,7 +29,6 @@ class CategoryCard extends StatelessWidget {
               borderRadius: BorderRadius.circular(50),
               color: Color(0xFFF7F8F8)
             ),
-            margin: EdgeInsets.all(10),
             child: SvgPicture.asset(categoryModel.iconPath, fit: BoxFit.scaleDown,),
           ),
           Text(categoryModel.name,

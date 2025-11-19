@@ -25,6 +25,7 @@ class RecommendationSection extends StatelessWidget {
             child: SectionTitle(title: "Reccomendation\nfor Diet",)          
         ),
         Container(
+          height: 240,
           color: Colors.green,
           child: ListView.builder(
             scrollDirection: Axis.horizontal,

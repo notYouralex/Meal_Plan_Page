@@ -13,7 +13,7 @@ class RecommendationCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.all(10),
+      margin: EdgeInsets.only(left: 10,right: 10),
       height: 238,
       width: 200,
       decoration: BoxDecoration(
@@ -23,10 +23,7 @@ class RecommendationCard extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
-          Container(
-            margin: EdgeInsets.all(2),
-            child: SvgPicture.asset(recommendationModel.iconPath),
-          ),
+          SvgPicture.asset(recommendationModel.iconPath),
           Column(
             children: [
               Text(recommendationModel.name,
