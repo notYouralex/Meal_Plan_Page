@@ -15,31 +15,32 @@ class CategorySection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      margin: EdgeInsets.all(10),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          SizedBox(height: 40,),
-          Container(
-            margin: EdgeInsets.only(left: 14),
-            child: SectionTitle( title: "Category")
-            ),
-          SizedBox(
-            height: 120,
-            child: ListView.builder(
-              scrollDirection: Axis.horizontal,
-              itemBuilder: (context, index) {
-                return CategoryCard(categoryModel: listCategory[index]);
-              },
-              itemCount: listCategory.length,
-              
-            ),
-          )
-        ],
-      ),
-    );
-  }
+  return Container(
+    color: Colors.amberAccent,
+    margin: const EdgeInsets.only(left: 10, top: 20, right: 10),
+    child: Column(
+      mainAxisSize: MainAxisSize.min, // Fit content instead of fixed height
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Padding(
+          padding: const EdgeInsets.only(left: 14),
+          child: SectionTitle(title: "Category"),
+        ),
+        const SizedBox(height: 6), // More explicit spacing
+        SizedBox(
+          height: 114,
+          child: ListView.builder(
+            scrollDirection: Axis.horizontal,
+            itemCount: listCategory.length,
+            itemBuilder: (context, index) {
+              return CategoryCard(categoryModel: listCategory[index]);
+            },
+          ),
+        ),
+      ],
+    ),
+  );
+}
 }
 
 

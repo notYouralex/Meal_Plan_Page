@@ -14,7 +14,7 @@ class CategoryCard extends StatelessWidget {
     return Container(
       height: 100,
       width: 80,
-      margin: EdgeInsets.only(top: 16,left: 10, right: 10),
+      margin: EdgeInsets.only(left: 10, right: 10),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(15),
         color: categoryModel.bgColor.withAlpha(80)

@@ -14,19 +14,18 @@ class RecommendationSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(top: 16, left: 10, right: 10),
-      height: 400,
-      width: double.infinity,     
+      margin: EdgeInsets.only(top: 16, left: 10, right: 10), 
+      color: Colors.amber,   
       child: Column(
         mainAxisSize: MainAxisSize.min,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-        Container(
-          margin: EdgeInsets.only(left: 14),
-          child: SectionTitle(title: "Reccomendation\nfor Diet",)          
+        Padding(
+            padding: const EdgeInsets.only(left: 14),
+            child: SectionTitle(title: "Reccomendation\nfor Diet",)          
         ),
-        SizedBox(
-          height: 240,
+        Container(
+          color: Colors.green,
           child: ListView.builder(
             scrollDirection: Axis.horizontal,
             itemCount: listRecommendation.length,

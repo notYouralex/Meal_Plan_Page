@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:practice/widgets/category_section.dart';
+import 'package:practice/widgets/popular_section.dart';
 import 'package:practice/widgets/recommendation_section.dart';
 import 'package:practice/widgets/search_section.dart';
 
@@ -16,6 +17,7 @@ class MealPlanPage extends StatelessWidget {
           SearchSection(),
           CategorySection(),
           RecommendationSection(),
+          PopularSection(),
         ],
       ),
 
