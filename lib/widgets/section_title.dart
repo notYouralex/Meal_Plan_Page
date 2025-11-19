@@ -8,9 +8,6 @@ class SectionTitle extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      margin: EdgeInsets.only(bottom: 16),
-      child: Text(title, style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600) ,),
-    );
+    return SizedBox(child: Text(title, style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600) ,));
   }
 }

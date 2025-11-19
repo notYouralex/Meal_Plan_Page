@@ -14,7 +14,7 @@ class CategoryCard extends StatelessWidget {
     return Container(
       height: 100,
       width: 80,
-      margin: EdgeInsets.all(10),
+      margin: EdgeInsets.only(top: 16,left: 10, right: 10),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(15),
         color: categoryModel.bgColor.withAlpha(80)
@@ -23,13 +23,17 @@ class CategoryCard extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           Container(
+            height: 50,
+            width: 50,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(50),
+              color: Color(0xFFF7F8F8)
             ),
             margin: EdgeInsets.all(10),
-            child: SvgPicture.asset(categoryModel.iconPath, height: 30,),
+            child: SvgPicture.asset(categoryModel.iconPath, fit: BoxFit.scaleDown,),
           ),
-          Text(categoryModel.name)
+          Text(categoryModel.name,
+          style: TextStyle(color: Color(0xFF1D1617),fontWeight: FontWeight.w400),)
         ],
       ),
     );
